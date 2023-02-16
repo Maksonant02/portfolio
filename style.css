@@ -45,7 +45,7 @@ body{
 .home-section{
     width: 100%;
     height: 100vh;
-    padding: 0 150px;
+    padding: 0 200px;
     display: flex;
     align-items: center;
     position: fixed;
@@ -56,6 +56,7 @@ body{
     font-size: 120px;
     text-transform: capitalize;
     font-weight: 300;
+    letter-spacing: 5px;
 }
 .home-section__picture{
     position: absolute;
