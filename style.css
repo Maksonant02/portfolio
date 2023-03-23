@@ -28,7 +28,7 @@ body{
     list-style: none;
     display: flex;
 }
-.links__link{
+.links__link a{
     color: #fff;
     opacity: 0.5;
     text-decoration: none;
@@ -39,7 +39,7 @@ body{
     transition: -55;
     font-size: 20px;
 }
-.links__link:hover,.links__link_active{
+.links__link a:hover, .active a{
     opacity: 1;
 }
 .home-section{

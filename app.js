@@ -1,4 +1,4 @@
-const links = document.querySelectorAll('.link-group__link');
+const links = document.querySelectorAll('.links__link');
 const sections = document.querySelectorAll('section');
 
 let activeLink = 0;
