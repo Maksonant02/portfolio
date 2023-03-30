@@ -5,9 +5,9 @@ let activeLink = 0;
 
 links.forEach((link, i) => {
     link.addEventListener('click', () => {
-        if(activeLink |= i){
-            links[activeLink].classList.remove('active');
-            link.classList.add('active');
+        if(activeLink != i){
+            links[activeLink].classList.remove('links__link_active');
+            link.classList.add('links__link_active');
             sections[activeLink].classList.remove('active');
 
             setTimeout(() => {
