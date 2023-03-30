@@ -196,7 +196,7 @@ height: 40px;
     transition: .5s;
     background: rgba(0, 0, 0, 0.5);
 }
-.about-card__btn {
+.about-card__btn:hover {
     background: #000;
 }
 
