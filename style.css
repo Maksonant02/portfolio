@@ -192,20 +192,121 @@ height: 40px;
     object-fit: cover;
     border-radius: 20px;
 }
-.about-card__btn {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 10px 20px;
-    color: #fff;
-    border: none;
-    font-size: 16px;
-    text-transform: capitalize;
-    cursor: pointer;
-    transition: .5s;
-    background: rgba(0, 0, 0, 0.5);
-}
+.about-card__btn, 
+    .about-card__btn,
+    .about-card__btn *,
+    .about-card__btn,
+    .about-card__btn,
+    .about-card__btn,
+    .about-card__btn {
+      border: 0 solid;
+      box-sizing: border-box;
+    }
+    .about-card__btn {
+      -webkit-tap-highlight-color: transparent;
+      -webkit-appearance: button;
+      background-color: #000;
+      background-image: none;
+      color: #fff;
+      cursor: pointer;
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+        Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+        Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+      font-size: 100%;
+      line-height: 1.5;
+      margin: 0;
+      /*-webkit-mask-image: -webkit-radial-gradient(#000, #fff);*/
+      padding: 0;
+    }
+    .about-card__btn:disabled {
+      cursor: default;
+    }
+    .about-card__btn:-moz-focusring {
+      outline: auto;
+    }
+    .about-card__btn svg {
+      display: block;
+      /*vertical-align: middle;*/
+    }
+    .about-card__btn [hidden] {
+      display: none;
+    }
+    .about-card__btn {
+      box-shadow: inset 0 0 0 2px #fff;
+      box-sizing: border-box;
+      display: block;
+      font-weight: 900;
+      padding: 1.2rem 3rem;
+      position: relative;
+      text-transform: uppercase;
+      transition: color 0.1s linear;
+    }
+    .about-card__btn:after,
+    .about-card__btn:before {
+      content: "";
+      position: absolute;
+    }
+    .about-card__btn:before {
+      border-bottom: var(--border);
+      border-top: var(--border);
+      height: 100%;
+      left: 50%;
+      top: 0;
+      transform: translateX(-50%);
+    }
+    .about-card__btn:hover:before {
+      --border: 4px solid #000;
+      -webkit-animation: border-top-and-bottom 1s forwards;
+      animation: border-top-and-bottom 1s forwards;
+    }
+    .about-card__btn:after {
+      border-left: var(--border);
+      border-right: var(--border);
+      bottom: 50%;
+      right: 0;
+      transform: translateY(50%);
+      width: 100%;
+      z-index: -1;
+    }
+    .about-card__btn:hover:after {
+      --border: 4px solid #000;
+      -webkit-animation: border-right-and-left 1s forwards;
+      animation: border-right-and-left 1s forwards;
+    }
+    @-webkit-keyframes border-top-and-bottom {
+      0% {
+        width: 0;
+      }
+      to {
+        width: 100%;
+      }
+    }
+    @keyframes border-top-and-bottom {
+      0% {
+        width: 0;
+      }
+      to {
+        width: 100%;
+      }
+    }
+    @-webkit-keyframes border-right-and-left {
+      0% {
+        height: 0;
+      }
+      to {
+        height: 100%;
+      }
+    }
+    @keyframes border-right-and-left {
+      0% {
+        height: 0;
+      }
+      to {
+        height: 100%;
+      }
+    }
+    
+
 .about-card__btn:hover {
     background: #000;
 }
@@ -262,5 +363,59 @@ height: 40px;
     font-size: 22px;
     border-radius: 50%;
     border: 10px solid;
+}
+.contact-section{
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    transition: 1s;
+    padding: 100px 150px;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+}
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid #fff;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  text-transform: capitalize;
+  color: #fff;
+  padding: 5px 10px;
+}
+::placeholder {
+  color: #fff;
+}
+.form-submit-btn {
+background: #ff4f4f;
+color: #fff;
+text-transform: capitalize;
+padding: 15px 40px;
+display: block;
+margin: auto;
+border: none;
+border-radius: 10px;
+cursor: pointer;
+}
+.map {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  border: 2px solid #fff;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+.map iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+#msg {
+  height: 280px;
+  resize: none;
+  font-family: sans-serif;
 }
 
