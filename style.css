@@ -235,7 +235,7 @@ height: 40px;
       box-shadow: inset 0 0 0 2px #fff;
       box-sizing: border-box;
       display: block;
-      font-weight: 900;
+      font-weight: 1000;
       padding: 1.2rem 3rem;
       position: relative;
       text-transform: uppercase;
@@ -417,5 +417,11 @@ cursor: pointer;
   height: 280px;
   resize: none;
   font-family: sans-serif;
+}
+.form-submit-btn:hover {
+background: #fff;
+border-radius: 20px;
+color: #000;
+transform: translateY(-5px);
 }
 
