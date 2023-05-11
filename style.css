@@ -236,7 +236,7 @@ height: 40px;
       box-sizing: border-box;
       display: block;
       font-weight: 1000;
-      padding: 1.2rem 3rem;
+      padding: 1rem 6.5rem;
       position: relative;
       text-transform: uppercase;
       transition: color 0.1s linear;
@@ -351,7 +351,7 @@ height: 40px;
     font-size: 18px;
     line-height: 30px;
 }
-.skill-card__level {
+.skill-card__level1 {
     position: absolute;
     top: 80px;
     right: 0;
@@ -363,6 +363,35 @@ height: 40px;
     font-size: 22px;
     border-radius: 50%;
     border: 10px solid;
+    color: #ff4f4f;
+}
+.skill-card__level2 {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  border-radius: 50%;
+  border: 10px solid;
+  color: yellow;
+}
+.skill-card__level3 {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  border-radius: 50%;
+  border: 10px solid;
+  color: green;
 }
 .contact-section{
     position: absolute;
@@ -399,6 +428,14 @@ margin: auto;
 border: none;
 border-radius: 10px;
 cursor: pointer;
+transform: translateY(0);
+border-radius: 0px;
+transition: 
+border-top-left-radius .15s .15s ease-out,
+border-top-right-radius .15s calc(.15s * 2) ease-out,
+border-bottom-right-radius .15s calc(.15s * 3) ease-out,
+border-bottom-left-radius .15s calc(.15s * 4) ease-out,
+transform calc(.15s * 4) ease-out
 }
 .map {
   width: 100%;
@@ -424,4 +461,9 @@ border-radius: 20px;
 color: #000;
 transform: translateY(-5px);
 }
-
+.icon-container {
+  display: flex;
+  width: 15vw;
+  height: 10vh;
+  align-items: center;
+}
