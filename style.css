@@ -195,10 +195,10 @@ height: 40px;
 .about-card__btn, 
     .about-card__btn,
     .about-card__btn *,
-    .about-card__btn,
-    .about-card__btn,
-    .about-card__btn,
-    .about-card__btn {
+    .about-card__btn ::after,
+    .about-card__btn ::before,
+    .about-card__btn ::after,
+    .about-card__btn ::before {
       border: 0 solid;
       box-sizing: border-box;
     }
@@ -236,7 +236,7 @@ height: 40px;
       box-sizing: border-box;
       display: block;
       font-weight: 1000;
-      padding: 1rem 6.5rem;
+      padding: 1rem 7rem;
       position: relative;
       text-transform: uppercase;
       transition: color 0.1s linear;
@@ -467,3 +467,36 @@ transform: translateY(-5px);
   height: 10vh;
   align-items: center;
 }
+#google, #vk, #github, #facebook {
+  font-size: 2em;
+  background-color: #18191f;
+  color: #fff;
+  border-radius: 20px;
+  padding: 11px;
+  margin: 0 40px;
+  box-shadow: 2px 2px 2px #00000080, 10px 1px 12px #00000080,
+    2px 2px 10px #00000080, 2px 2px 3px #00000080, inset 2px 2px 10px #00000080,
+    inset 2px 2px 10px #00000080, inset 2px 2px 10px #00000080,
+    inset 2px 2px 10px #00000080;
+    text-shadow: 0 0 50px #0072ff, 0 0 100px #0072ff, 0 0 150px #0072ff,
+    0 0 200px #0072ff;
+    animation: animate 3s linear infinite;
+}
+#vk {
+  animation-delay: 0.3s;
+}
+#github {
+  animation-delay: 0.6s;
+}
+#facebook {
+  animation-delay: 0.9s;
+}
+@keyframes animate {
+  from {
+    filter: hue-rotate(0deg);
+  }
+  to {
+    filter: hue-rotate(360deg);
+  }
+}
+
